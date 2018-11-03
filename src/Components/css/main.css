@@ -1,0 +1,30 @@
+.main {
+    height: 600px;
+    display: flex;
+    float: right;
+    margin-right: 100px;
+    opacity: 0.9;
+}
+
+.cake-imgs {
+    float: left;
+    height: 250px;
+    width: 250px;
+}
+
+.post-header-m {
+    width: 800px;
+    position: relative;
+    background: #ffffff;
+    padding: 25px;
+    text-align: center;
+    z-index: 2;
+  }
+
+.box {
+    width: 250px;
+    height: 250px;
+
+}
+
+

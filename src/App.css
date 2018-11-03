@@ -1,32 +1,124 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Parisienne');
+
+body {
+  
+  background: url('img/logo.jpg') no-repeat;
+  background-size: 800px;
+  background-position: center;
+}
+
+body {margin:0;}
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a {
+
+  color: inherit;
+  text-decoration: none;
+}
+.post-header {
+  position: relative;
+  background: #ffffff;
+  padding: 25px;
   text-align: center;
+  z-index: 2;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.post-cat a {
+  display: inline-block;
+  font-size: 20px;
+  margin: 5px 25px;
   color: white;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: #937338;
+  line-height: 20px;
+  height: 20px;
+  position: relative;
+}
+.post-cat a:before, .post-cat a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 10px solid #937338;
+  top: 0;
+}
+.post-cat a:before {
+  left: 0;
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
+  border-left-color: transparent;
+}
+.post-cat a:after {
+  right: 0;
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+  border-right-color: transparent;
 }
 
-.App-link {
-  color: #61dafb;
+.post-title h2 {
+    font-family: 'Parisienne', cursive;
+  font-weight: normal;
+  line-height: 1.8em;
+  font-size: 50px;
+  color: rgb(214, 108, 108);
+  margin: 0px 0 8px;
+  letter-spacing: 0.08em;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.post-meta {
+  font-size: 18px;
+  color: #937338;
+  letter-spacing: 0.2em;
+}
+.border {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  bottom: 8px;
+  left: 8px;
+  overflow: hidden;
+  z-index: -1;
+}
+.border:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #937338;
+}
+.border span:before, .border span:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid #937338;
+  background: #ffffff;
+}
+.border span:nth-child(1):before {
+  top: -18px;
+  left: -18px;
+}
+.border span:nth-child(1):after {
+  top: -18px;
+  right: -18px;
+}
+.border span:nth-child(2):before {
+  bottom: -18px;
+  left: -18px;
+}
+.border span:nth-child(2):after {
+  bottom: -18px;
+  right: -18px;
 }

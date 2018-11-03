@@ -1,0 +1,12 @@
+nav {
+    border-radius: 10px;
+    background-color: #fff;
+    opacity: 0.9;
+    border: 1px solid #937338;
+    height: 600px;
+    width: 250px;
+    display: flex;
+    float: left;
+    margin-left: 100px;
+    
+}
