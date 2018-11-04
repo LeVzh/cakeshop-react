@@ -1,20 +1,45 @@
 import React, { Component } from 'react';
 
-import DCarousel from './Carousel'
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
 import './css/main.css';
 
 class Main extends Component {
 
-  getCakes = () =>{
-    return this.props.data
+  renderCakes = () =>{
+    const {data} = this.props
+    let cakesImgs = null
+    cakesImgs = data.map((imgRef) => {
+        return  <div className="box">
+                    <img className="cake-imgs" key={imgRef.id} src={imgRef.ref} />
+                </div>
+      })
+
+    return cakesImgs;
   }
   
   render() {
+    const settings = {
+      
+      autoplay: true,
+      arrows: false,
+      accessibility: false,
+      dots: true,
+      infinite: true,
+      speed: 1000,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      fade: false
+    };
     return (
       <div className="main">
         <div className="post-header-m">            
-
-          <DCarousel data={this.getCakes()}></DCarousel>
+        <Slider {...settings}>
+          {this.renderCakes()}
+        </Slider>
+          
             
           
           
