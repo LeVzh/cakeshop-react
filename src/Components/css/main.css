@@ -8,11 +8,12 @@
 
 .cake-imgs {
     float: left;
-    height: 250px;
-    width: 250px;
+    height: 251px;
+    width: 251px;
 }
 
 .post-header-m {
+
     width: 800px;
     position: relative;
     background: #ffffff;
@@ -21,10 +22,18 @@
     z-index: 2;
   }
 
+.legend {
+    box-sizing: border-box;
+}
 .box {
+    
     width: 250px;
     height: 250px;
 
+}
+
+.selected {
+    border-bottom: #9E814C solid 5px;
 }
 
 
