@@ -3,10 +3,50 @@ nav {
     background-color: #fff;
     opacity: 0.9;
     border: 1px solid #937338;
-    height: 600px;
     width: 250px;
     display: flex;
     float: left;
-    margin-left: 100px;
-    
+    margin-left: 200px;
+    padding-right: 15px;
+    margin-top: 10px;
 }
+
+.push {
+    list-style: none;
+    font-family: "Lucida Sans";
+  }
+  .push li {
+    position: relative;
+    padding: 20px 0 20px 40px;
+    color: #D29D25;
+    font-size: 20px;
+    font-variant: small-caps;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .push li:before {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #4F5151;
+    content: "";
+    left: 0;
+    transition: .3s ease-in-out;
+    top: 27px;
+  }
+  .push li:after {
+    position: absolute;
+    border-left: 1px dotted #4F5151;
+    width: 1px;
+    bottom: -12px;
+    content: "";
+    left: 3px;
+    top: 48px;
+  }
+  .push li:hover:before{box-shadow: 0 0 0 10px rgba(0,0,0,.2)}
+  .push li:last-child:after {content: none;}
+
+  .catContainer {
+      margin-left: 25px;
+  }
