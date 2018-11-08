@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Parisienne');
 
 .main {
-    height: 600px;
     display: flex;
     float: right;
-    margin-right: 100px;
+    margin-right: 150px;
     opacity: 0.9;
 }
 
@@ -44,6 +43,47 @@
     font-size: 40px;
     margin-bottom: 30px;
     margin-top: 15px;
+}
+
+.Collapsible {
+    background-color: #f1d7a6;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.elem {
+    background-color: #f1d7a6;
+    border: 1px solid #937338;
+    font-size: 23px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.Collapsible__trigger {
+    font-size: 30px;
+    letter-spacing: 0.2em;
+    line-height: 2em;
+    color: #7c612f
+}
+
+form {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+form input {
+    margin-bottom: 10px;
+    width: 600px;
+    height: 40px;
+    padding-left: 10px;
+}
+
+.buttnSubmit {
+    border-radius: 3px;
+    border-color: #897143;
+    background-color: #7c612f;
+    color: #fff;
+    font-size: 20px
 }
 
 
